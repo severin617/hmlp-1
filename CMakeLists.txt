@@ -1,5 +1,5 @@
 # ---[ Check cmake version.
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12 FATAL_ERROR)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0 FATAL_ERROR)
 
 # ---[ Project specification.
 PROJECT(hmlp C CXX)
@@ -20,7 +20,7 @@ SET(CONFU_DEPENDENCIES_SOURCE_DIR ${CMAKE_SOURCE_DIR}/deps CACHE PATH "Confu-sty
 SET(CONFU_DEPENDENCIES_BINARY_DIR ${CMAKE_BINARY_DIR}/deps CACHE PATH "Confu-style dependencies binary directory")
 
 # ---[ Build options (not completed yet).
-SET(LIBRARY_TYPE "default" CACHE STRING "Type of hmlp library (shared, static, or default) to build")
+SET(LIBRARY_TYPE "shared" CACHE STRING "Type of hmlp library (shared, static, or default) to build")
 SET_PROPERTY(CACHE LIBRARY_TYPE PROPERTY STRINGS default static shared)
 OPTION(BUILD_TOOLS "Build command-line tools" ON)
 OPTION(BUILD_UNIT_TESTS "Build hmlp unit tests" ON)
