@@ -36,7 +36,11 @@
 using namespace std;
 using namespace hmlp;
 
-
+int hello_world()
+{
+  cout << "Hello World!"<< endl;
+  return 0;
+}
 
 
 /** @brief Top level driver that reads arguments from the command line. */ 
